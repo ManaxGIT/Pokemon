@@ -1,0 +1,1313 @@
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px
+}
+
+.heading .title {
+    margin: 0 0 0 20px
+}
+
+.heading h1 {
+    font-size: 32px;
+    font-weight: 300;
+    padding: 0
+}
+
+.heading select {
+    border: 1px solid #ccc;
+    background: #fff;
+    font-size: 20px;
+    margin: 1px 0 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.25)
+}
+
+.heading h2 {
+    font-size: 24px;
+    font-weight: 300;
+    color: rgba(0,0,0,.34)
+}
+
+.heading .preview {
+    width: 156px;
+    height: 156px;
+    /* position: relative */
+}
+
+.heading .preview .bg {
+    /* position: absolute; */
+    border-radius: 4px;
+    opacity: .9;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/game/details_type_bg_grass.png);
+    background-size: cover;
+    border: 1px solid rgba(0,0,0,.33)
+}
+
+.heading .preview img {
+    width: 100%;
+    /* position: relative */
+}
+
+section.split {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px
+}
+
+section.split .info {
+    width: 250px;
+    margin-right: 20px
+}
+
+section.split .info:last-child {
+    margin-right: 0
+}
+
+section.split .nav {
+    flex-grow: 1
+}
+
+.split .info {
+    position: relative;
+    margin-top: 106px;
+    padding: 25px;
+    border-radius: 6px;
+    text-align: center
+}
+
+.split .info .image-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-75%);
+    top: 0;
+    width: 128px;
+    height: 128px
+}
+
+.split .info .image-container {
+    padding: 12px;
+    border-radius: 50%;
+    text-align: center
+}
+
+.split .info .image-container img {
+    max-width: 100%;
+    max-height: 100%
+}
+
+.split .info h1 {
+    font-size: 32px;
+    margin-top: 28px;
+    border-bottom: none
+}
+
+.split .info .description {
+    font-size: 13px;
+    color: #6666660c
+}
+
+.types {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 6px;
+    overflow: hidden
+}
+
+.types .type {
+    padding: 0 18px;
+    display: block;
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    border-radius: 0;
+    line-height: 25px
+}
+
+.types .subtype {
+    font-size: 12px;
+    line-height: 25px
+}
+
+.weaknesses {
+    font-size: 14px
+}
+
+.weaknesses .type {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.weaknesses .type.double::after {
+    content: ' (x2)';
+    font-size: 12px
+}
+
+.resistances {
+    font-size: 14px
+}
+
+.resistances .type {
+    display: inline-block;
+    margin-top: 4px
+}
+
+.grid {
+    align-items: stretch
+}
+
+.grid>div {
+    flex: 1 1 50%;
+    margin: 0 10px
+}
+
+.grid article {
+    margin: 0 0 20px
+}
+
+.fa-fw {
+    display: inline-block;
+    width: 1.28571429em
+}
+
+article.contents {
+    padding: 18px 20px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+article.contents h2 {
+    border-bottom: none;
+    font-size: 16px;
+    margin-bottom: 10px
+}
+
+article.contents ul {
+    font-size: 13px;
+    margin-left: 9px;
+    margin-bottom: 4px
+}
+
+article.contents ul li {
+    list-style-type: none;
+    margin-bottom: 3px
+}
+
+article.contents ul li::before {
+    content: '\2013';
+    color: #aaa;
+    margin-right: 6px
+}
+
+@media all and (max-width: 800px) {
+    article.contents {
+        max-width:100%;
+        margin-left: 20px;
+        margin-right: 20px
+    }
+}
+
+.grid.boxed article {
+    padding: 13px 20px 20px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.14)
+}
+
+.grid.boxed article:empty {
+    display: none
+}
+
+.grid.boxed article h2 {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 30px;
+    border-bottom: none
+}
+
+.grid.boxed article h3 {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px 0 10px;
+}
+
+article.pokemon-about {
+    border-top: 5px solid #42a5f5;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+article.pokemon-about p {
+    font-size: 18px;
+    color: #666
+}
+
+article.pokemon-about h2 {
+    margin-bottom: 15px;
+    margin-top: 30px
+}
+
+article.pokemon-about h2:first-child {
+    margin-top: 0
+}
+
+
+.grid.boxed article.pokemon-type {
+    border-top: 5px solid #607d8b
+}
+
+.grid.boxed article.pokemon-type .grid {
+    text-align: center
+}
+
+.grid.boxed article.pokemon-type .large-type {
+    text-align: center
+}
+
+.grid.boxed article.pokemon-type .large-type .type {
+    font-size: 18px;
+    padding: 5px 32px
+}
+
+.grid.boxed article.pokemon-type h2 {
+    margin-bottom: 20px
+}
+
+.grid.boxed article.pokemon-type .grid {
+    margin-bottom: 0
+}
+
+table.weaknesses {
+    width: 100%;
+    margin-top: 20px
+}
+
+table.weaknesses caption {
+    font-size: 16px;
+    padding: 0 0 15px
+}
+
+table.weaknesses .type {
+    display: block;
+    margin-bottom: 4px
+}
+
+table.weaknesses td:last-child {
+    font-size: 13px;
+    line-height: 1.2;
+    padding-bottom: 2px;
+    text-align: left;
+    padding-left: 12px
+}
+
+table.weaknesses td span {
+    font-weight: 700;
+    line-height: 26px
+}
+
+table.weak span._x {
+    color: #b71c1c
+}
+
+table.weak span._xx {
+    color: #f44336;
+    font-size: 18px
+}
+
+table.res span._x {
+    color: #004d40
+}
+
+table.res span._xx {
+    color: #388e3c;
+    font-size: 16px
+}
+
+table.res span._xxx {
+    color: #4caf50;
+    font-size: 20px
+}
+
+.grid.boxed article.best-moveset {
+    border-top: 5px solid #ef5350
+}
+
+.grid.boxed article.best-moveset i {
+    font-size: 20px;
+    color: #bbb;
+    position: relative;
+    top: 2px;
+    left: 4px;
+    cursor: pointer
+}
+
+.grid.boxed article.best-moveset .grid h3 {
+    text-align: center;
+    margin-top: 0
+}
+
+.grid.boxed article.best-moveset p {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center
+}
+
+.grid.boxed article.best-moveset p.info {
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left
+}
+
+.grid.boxed article.best-moveset sub {
+    vertical-align: baseline;
+    margin-left: 1px;
+    opacity: .7;
+    font-size: 12px
+}
+
+.grid.boxed article.counter-pokemon {
+    border-top: 5px solid #4caf50;
+    overflow: auto
+}
+
+.grid.boxed article.counter-pokemon p {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 0
+}
+
+.grid.boxed article.counter-pokemon p.center {
+    text-align: center
+}
+
+.grid.boxed article.counter-pokemon .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 2px
+}
+
+.grid.boxed article.counter-pokemon .filter span {
+    color: #666;
+    font-size: 14px
+}
+
+.grid.boxed article.counter-pokemon .filter input {
+    flex-grow: 1
+}
+
+.grid.boxed article.counter-pokemon ul.inline {
+    margin: 10px 0 0;
+    padding: 0 0 0 16px;
+    border-left: 4px solid #ccc;
+    font-size: 13px
+}
+
+.grid.boxed article.counter-pokemon ul.inline li {
+    display: inline
+}
+
+.grid.boxed article.strongest-vs {
+    border-top: 5px solid #673ab7
+}
+
+.grid.boxed article.strongest-vs p {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 0
+}
+
+.grid.boxed article.all-moves {
+    border-top: 5px solid #b71c1c
+}
+
+.grid.boxed article.evolution-block {
+    border-top: 5px solid #009688
+}
+
+.grid.boxed article.evolution-block h2 {
+    margin-top: 0;
+    margin-bottom: 10px
+}
+
+.grid.boxed article.evolution-block p {
+    font-size: 13px;
+    margin: 15px 0 0
+}
+
+.grid.boxed article.evolution-block .right {
+    float: right;
+    font-size: 13px;
+    margin-top: 4px
+}
+
+.grid.boxed article.forms-block h2 {
+    margin-top: 0;
+    margin-bottom: 10px
+}
+
+.grid.boxed article.raid-block {
+    border-top: 5px solid #667eea
+}
+
+.grid.boxed article.raid-block h2 {
+    margin-top: 0;
+    margin-bottom: 10px
+}
+
+.grid.boxed article.raid-block p {
+    font-size: 13px;
+    margin: 10px 0 0
+}
+
+.grid.boxed article.pokemon-stats {
+    border-top: 5px solid #b71c1c;
+    overflow: auto
+}
+
+.grid.boxed article.pokemon-stats .table-stats {
+    border: none
+}
+
+.grid.boxed article.pokemon-stats .table-stats td {
+    padding: 4px 6px
+}
+
+.grid.boxed article.pokemon-stats .table-stats tr:nth-child(2n) td {
+    background: 0 0
+}
+
+.grid.boxed article.pokemon-stats .table-stats td:first-child {
+    font-size: 13px;
+    color: #555
+}
+
+.grid.boxed article.pokemon-stats .table-stats td:nth-child(2) {
+    font-size: 15px
+}
+
+.grid.boxed article.pokemon-stats .table-stats td:nth-child(n+2) {
+    border-left: 1px solid #eee
+}
+
+.grid.boxed article.pokemon-stats .table-stats td span {
+    font-size: 13px;
+    color: #888
+}
+
+.grid.boxed article.pokemon-stats .table-stats td strong {
+    color: #222
+}
+
+.grid.boxed article.pokemon-stats .table-stats td small {
+    font-size: 13px;
+    color: #777
+}
+
+.grid.boxed article.pokemon-stats h3 {
+    margin-top: 32px
+}
+
+.grid.boxed article.pokemon-stats a {
+    font-size: 12px;
+    margin-left: 8px
+}
+
+.grid.boxed article.pokemon-stats .table-stats.bars {
+    width: auto;
+    margin: 22px auto 36px
+}
+
+.grid.boxed article.pokemon-stats .table-stats.bars td {
+    border-left: none!important
+}
+
+.grid.boxed article.pokemon-stats .table-stats.bars td:first-child {
+    padding-right: 24px!important
+}
+
+.grid.boxed article.pokemon-stats .table-stats.bars td:last-child {
+    text-align: right;
+    padding-left: 12px!important
+}
+
+.grid.boxed article.pokemon-stats .bars .bar {
+    height: 6px;
+    width: 150px;
+    position: relative;
+    background: #eaeaea;
+    border-radius: 5px
+}
+
+.grid.boxed article.pokemon-stats .bars .bar .inner {
+    position: absolute;
+    height: 100%;
+    background: #aaa;
+    border-radius: 5px
+}
+
+.grid.boxed article.pokemon-stats .bars .bar.att .inner {
+    background: #f56565
+}
+
+.grid.boxed article.pokemon-stats .bars .bar.def .inner {
+    background: #48bb78
+}
+
+.grid.boxed article.pokemon-stats .bars .bar.sta .inner {
+    background: #4299e1
+}
+
+.grid.boxed article.all-moves p {
+    font-size: 13px;
+    color: #555;
+    margin-top: 25px;
+    margin-bottom: 0
+}
+
+.grid.boxed article.pokemon-comments {
+    border-top: 5px solid #2e87e7
+}
+
+.grid.boxed article.share h2 {
+    margin-bottom: 16px
+}
+
+.options-counter {
+    float: right;
+    margin-right: 45px
+}
+
+.table-counter {
+    border: none
+}
+
+.table-counter .old {
+    display: none
+}
+
+.table-counter .old td {
+    background-color: rgba(255,0,0,.1)!important
+}
+
+.table-counter.all .old {
+    display: table-row
+}
+
+.table-counter th {
+    border: 1px solid #ddd;
+    line-height: 18px;
+    color: #546673;
+    font-size: 13px;
+    padding: 10px 8px;
+    border-bottom: 1px solid #c4c4c4
+}
+
+.table-counter td {
+    font-size: 13px;
+    padding: 4px 8px;
+    line-height: 32px;
+    border: 1px solid #ddd
+}
+
+.table-counter tr:nth-child(2n) td {
+    background-color: #f8f8f8
+}
+
+.table-counter tr th:nth-child(4) {
+    width: 15%
+}
+
+.table-counter td ._p28 {
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    margin-right: 4px
+}
+
+.table-counter td:first-child {
+    font-weight: 700
+}
+
+.table-counter caption {
+    font-size: 13px;
+    margin-bottom: 15px
+}
+
+.table-counter .move-icon {
+    margin-left: -3px;
+    margin-right: 1px;
+    transform: scale(.8)
+}
+
+.evolution {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px
+}
+
+.evolution .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 20%
+}
+
+.evolution .pokemon {
+    display: flex;
+    margin: 0 0 12px;
+    min-height: 54px;
+    align-items: center
+}
+
+.evolution .pokemon a {
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.evolution .pokemon a span {
+    margin-right: 6px
+}
+
+.evolution .pokemon img {
+    display: block;
+    max-height: 76px;
+    max-width: 76px;
+    margin: 0 3px
+}
+
+.evolution .pokemon.faded {
+    opacity: .5
+}
+
+.evolution .pokemon.active span {
+    font-weight: 700;
+    color: #222
+}
+
+.evolution .pokemon.active a {
+    font-weight: 700;
+    color: #555
+}
+
+.evolution .pokemon:hover span {
+    text-decoration: underline
+}
+
+.evolution .pokemon a:hover {
+    text-decoration: underline
+}
+
+.evolution .req {
+    display: flex;
+    margin: 0 0 16px;
+    height: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.evolution .req i {
+    font-size: 24px;
+    color: #ddd;
+    transform: scaleX(1.35)
+}
+
+.evolution .req span {
+    font-size: 13px;
+    color: #777;
+    line-height: 14px
+}
+
+.evolution .req img {
+    width: 24px;
+    display: block
+}
+
+.evolution .req.mega i {
+    color: #fc8181
+}
+
+.grid article.images-block {
+    padding-bottom: 1px
+}
+
+.grid article.images-block h2 {
+    margin: 0 0 20px;
+    display: flex;
+    justify-content: space-between
+}
+
+.grid article.images-block p {
+    font-size: 13px;
+    margin: 0 0 30px
+}
+
+.grid article.images-block h2 label {
+    font-size: 13px;
+    font-weight: 400
+}
+
+.images-block .row {
+    margin: 0 0 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.images-block .game-image {
+    display: block;
+    position: relative;
+    flex: 0 1 25%;
+    margin-bottom: 15px;
+    background: #f9f9f9
+}
+
+.images-block img {
+    display: block;
+    max-width: 100%;
+    border: 1px solid #ddd
+}
+
+.images-block .icon {
+    position: absolute;
+    top: 0;
+    left: 50%
+}
+
+.game-image.male .icon::before {
+    content: '';
+    position: absolute;
+    background-size: contain;
+    background-image: url(/images/male_l.png);
+    width: 34px;
+    height: 34px;
+    transform: translate(-50%,-40%)
+}
+
+.game-image.female .icon::after {
+    content: '';
+    position: absolute;
+    background-size: contain;
+    background-image: url(/images/female_l.png);
+    width: 34px;
+    height: 34px;
+    transform: translate(-50%,-40%)
+}
+
+.game-image.shiny.male .icon::before {
+    background-image: url(/images/male_shiny_l.png);
+    width: 41px;
+    height: 41px
+}
+
+.game-image.shiny.female .icon::after {
+    background-image: url(/images/female_shiny_l.png);
+    width: 41px;
+    height: 41px
+}
+
+.game-image.male.female .icon::before {
+    transform: translate(-100%,-40%)
+}
+
+.game-image.male.female .icon::after {
+    transform: translate(0,-40%)
+}
+
+article.all-moves table {
+    width: 100%;
+    margin-top: 20px;
+    border-spacing: 0 1px;
+    border-collapse: separate
+}
+
+article.all-moves tr th {
+    text-align: left;
+    padding-bottom: 6px;
+    color: #666;
+    font-size: 13px
+}
+
+article.all-moves tr th:first-child {
+    font-weight: 700;
+    font-size: 14px
+}
+
+article.all-moves tr td {
+    line-height: 28px;
+    font-size: 14px
+}
+
+article.all-moves tr td:nth-child(n+2) {
+    font-size: 12px
+}
+
+article.all-moves tr td:last-child {
+    font-size: 15px;
+    padding-right: 4px
+}
+
+article.all-moves tr.stab td:nth-child(n+2) {
+    background-color: #dcedc8
+}
+
+article.all-moves tr.old td {
+    opacity: .6;
+    font-size: 12px
+}
+
+article.all-moves tr>:nth-child(n+2) {
+    width: 18%;
+    text-align: right
+}
+
+article.all-moves span {
+    margin-right: 3px
+}
+
+article.all-moves p {
+    font-size: 13px;
+    color: #555;
+    margin-top: 25px;
+    margin-bottom: 0
+}
+
+.forms-block p {
+    font-size: 13px
+}
+
+.forms-block .forms {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0
+}
+
+.forms-block .forms li {
+    list-style: none
+}
+
+.forms-block .forms .form {
+    display: block;
+    text-align: center;
+    margin-bottom: 16px
+}
+
+.forms-block .forms img {
+    display: block;
+    font-size: 10px;
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    border-radius: 2px;
+    margin: auto
+}
+
+.forms-block .forms span {
+    display: block;
+    font-size: 14px;
+    margin-top: 4px
+}
+
+.forms-block .forms .form.active span {
+    font-weight: 700;
+    color: #222
+}
+
+section>img {
+    display: block;
+    margin: 18px auto 8px;
+    height: 110px
+}
+
+section>h1 {
+    text-align: center;
+    font-weight: 300;
+    padding-top: 0
+}
+
+section>h1.p-legendary {
+    font-weight: 400
+}
+
+section>h1.p-mythical {
+    font-weight: 400
+}
+
+.info-box {
+    position: absolute;
+    display: block;
+    width: 150px;
+    background: #fff;
+    right: 0;
+    top: 0;
+    padding: 13px 10px
+}
+
+.info-box {
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.14)
+}
+
+.info-box h2 {
+    margin: 0 0 10px
+}
+
+.info-box .cp {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: -4px
+}
+
+table.iv-chart {
+    width: 100%;
+    border: 1px solid #000
+}
+
+table.iv-chart th {
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,.1);
+    border-bottom: 2px solid #000;
+    font-weight: 700;
+    padding: 1px 0
+}
+
+table.iv-chart td {
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,.1)
+}
+
+table.iv-chart th:last-child {
+    border-right: none
+}
+
+table.iv-chart td:last-child {
+    border-right: none
+}
+
+table.iv-chart td:first-child {
+    font-size: 14px;
+    line-height: 1.6
+}
+
+table.iv-chart .v45 td {
+    background: #e53935;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.8
+}
+
+table.iv-chart .v44 td {
+    background: #ff5722
+}
+
+table.iv-chart .v43 td {
+    background: #ff9800
+}
+
+table.iv-chart .v42 td {
+    background: #ffc107
+}
+
+table.iv-chart .v41 td {
+    background: #ffeb3b
+}
+
+table.iv-chart .v40 td {
+    background: #fff176
+}
+
+table.iv-chart .v39 td {
+    background: #fff59d
+}
+
+table.iv-chart .v38 td {
+    background: #fff9c4
+}
+
+table.iv-chart .nxt td {
+    border-top: 2px solid #111
+}
+
+#svg {
+    margin-bottom: 10px;
+    margin-top: 0
+}
+
+#svg rect {
+    fill: #e3f2fd
+}
+
+#svg #bar {
+    fill: #2196f3
+}
+
+#cont:hover::before {
+    font-weight: 700
+}
+
+#cont .rank {
+    font-size: 12px;
+    color: #666;
+    font-weight: 700
+}
+
+#cont .rank span {
+    display: block;
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #999
+}
+
+#cont .rank span em {
+    color: #404040;
+    font-size: 20px;
+    font-style: normal
+}
+
+#cont .rank span em::before {
+    content: '#';
+    color: #999;
+    font-weight: 300
+}
+
+#cont:hover .rank span em {
+    font-weight: 400
+}
+
+table.moveset {
+    width: 100%;
+    border-spacing: 0 1px;
+    border-collapse: separate
+}
+
+table.moveset td {
+    padding: 0 6px;
+    font-size: 14px;
+    line-height: 36px;
+    background: rgba(0,0,0,.03)
+}
+
+table.moveset tr.stab td {
+    background-color: #dcedc8
+}
+
+table.moveset td .move-icon {
+    margin-right: 4px
+}
+
+table.moveset td a {
+    color: #222
+}
+
+table.moveset td a:hover {
+    text-decoration: underline
+}
+
+table.moveset td:nth-child(2) {
+    text-align: right;
+    font-size: 13px
+}
+
+.toggle-next {
+    margin-bottom: -5px!important
+}
+
+.toggle-next.active {
+    margin-bottom: inherit!important
+}
+
+.toggle-next {
+    cursor: pointer
+}
+
+.toggle-next .fa {
+    font-size: 20px;
+    color: #888;
+    margin-right: 6px
+}
+
+.toggle-next .fa.fa-angle-down {
+    display: none
+}
+
+.toggle-next.active .fa.fa-angle-right {
+    display: none
+}
+
+.toggle-next.active .fa.fa-angle-down {
+    display: inline-block
+}
+
+.togglable {
+    display: none
+}
+
+.toggle-next.active+.togglable {
+    display: block
+}
+
+form.strongest {
+    max-width: 300px;
+    margin: auto
+}
+
+form.strongest label {
+    margin: 0 10px;
+    flex-grow: 1;
+    font-size: 13px;
+    color: #999
+}
+
+form.strongest label select {
+    margin-top: 2px
+}
+
+.adsbygoogle.resp {
+    margin-bottom: 10px
+}
+
+.mobile-view {
+    display: none!important
+}
+
+.desktop-view {
+    display: block!important
+}
+
+@media(max-width: 1000px) {
+    ._aside {
+        display:none
+    }
+
+    section.split .info:nth-child(3) {
+        margin-right: 0
+    }
+}
+
+@media(max-width: 880px) {
+    .heading .preview {
+        width:96px;
+        height: 96px
+    }
+
+    .heading h1 {
+        font-size: 28px
+    }
+
+    section.split {
+        flex-wrap: wrap;
+        justify-content: flex-start
+    }
+
+    section.split .info {
+        width: calc(50% - 15px);
+        box-sizing: border-box;
+        margin: 0 0 10px 10px
+    }
+
+    section.split .info:nth-child(2) {
+        order: -1;
+        width: 100%;
+        margin-top: 106px;
+        margin-right: 10px
+    }
+
+    .moves .move div:nth-child(4) {
+        font-size: 14px
+    }
+
+    .main.grid {
+        display: block;
+        margin: 0 0 20px
+    }
+
+    .main.grid>div {
+        margin: 0 20px
+    }
+
+    table.table-stats {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    .mobile-view {
+        display: block!important
+    }
+
+    .desktop-view {
+        display: none!important
+    }
+}
+
+@media(max-width: 500px) {
+    section.split .info {
+        width:100%;
+        margin: 0 10px 10px
+    }
+
+    section.split .info:nth-child(3) {
+        margin-right: 10px
+    }
+
+    section.split .info:first-child {
+        order: 3
+    }
+
+    .best-moveset .grid {
+        flex-wrap: wrap
+    }
+}
+
+@media(max-width: 450px) {
+    .main.grid>div {
+        margin:0
+    }
+
+    .main.grid article {
+        margin: 0 0 20px;
+        border-radius: 0;
+        padding: 8px 10px 10px
+    }
+
+    .table-stats td {
+        padding: 6px
+    }
+
+    .info-box {
+        display: none
+    }
+}
+
+@media(max-width: 370px) {
+    .grid {
+        display:block
+    }
+
+    .grid>div {
+        margin-bottom: 20px
+    }
+
+    .moves .move div:nth-child(3) {
+        display: none
+    }
+
+    .evolution {
+        flex-wrap: wrap
+    }
+}

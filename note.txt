@@ -1,0 +1,4 @@
+-sửa %dmg khắc hệ của các pokemon từ 15 về trước.
+-sửa lại mô tả loại pokemon từ 1 - 26 
+-sửa mega charizard
+-pokemon tiến hóa nhờ trade: abra, ghastly, rhyhorn, porygon, geodude
